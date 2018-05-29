@@ -7,7 +7,7 @@ This is the labs for the Chef Jumpstart workshop at Chef Conf 2018 in Chicago
 There are three tagged commits on the repo
 * Initial - The initial state of the labs as provided on the workstation
 * Complete - The final state of the labs as you should have achieved after the sessions
-* Bonus - A bonus section, this adding tests to the loadbalancer coookbook, including the required fixture cookbook
+* Bonus - A bonus section, this adding tests to the loadbalancer coookbook, including the required fixture cookbook *NOTE* This is not yet complete.
 
 You can checkout the different versions with the git cli as follows: 
 
