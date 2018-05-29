@@ -1,0 +1,27 @@
+---
+driver:
+  name: dokken
+  chef_version: latest
+  use_sudo: false
+
+transport: 
+  name: dokken
+
+provisioner:
+  name: dokken
+
+verifier:
+  name: inspec
+
+platforms:
+  - name: centos-6
+    driver: 
+      image: dokken/centos-6
+suites:
+  - name: default
+    run_list:
+      - recipe[webserver::default]
+    verifier:
+      inspec_tests:
+        - test/smoke/default
+    attributes:
